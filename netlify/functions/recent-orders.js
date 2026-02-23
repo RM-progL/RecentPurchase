@@ -112,7 +112,7 @@ export const handler = async (event, context) => {  // Use ESM export if "type":
       if (product.product_id) {
         try {
           const catalogResponse = await fetch(
-            `https://api.bigcommerce.com/stores/${STORE_HASH}/v3/catalog/products/${product.product_id}`,
+            `https://api.bigcommerce.com/stores/${STORE_HASH}/v3/catalog/products/${product.product_id}?include=images`,
             {
               headers: {
                 'X-Auth-Token': ACCESS_TOKEN,
