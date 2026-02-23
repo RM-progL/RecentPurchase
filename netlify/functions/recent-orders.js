@@ -37,7 +37,7 @@ body: JSON.stringify({ error: 'Method not allowed' })
 }
 
 // Check if credentials are configured
-if (! STORE_HASH || ! ACCESS_TOKEN) {
+if (!STORE_HASH || !ACCESS_TOKEN) {
 console.error('Missing environment variables');
 return {
 statusCode: 500,
