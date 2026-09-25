@@ -1,7 +1,7 @@
 const PATTERN = /_\d{6}@/;
 
 const STORE_HASH = process.env.BC_STORE_HASH;
-const TOKEN = process.env.BC_ACCESS_TOKEN;
+const TOKEN = process.env.BC_CUSTOMERS_TOKEN;
 
 const headers = {
   "X-Auth-Token": TOKEN,
